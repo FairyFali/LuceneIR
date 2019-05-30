@@ -14,11 +14,36 @@
 	+ 程序源码；
 	+ 能够支持运行的部分语料(由于语料较大，暂不需要提交全部语料)。
 
+### 依赖环境
++ eclipse4.10
++ tomcat7.0
++ jdk1.8/jdk1.12
+
+### 使用的技术
++ el/jstl
++ boostrap/jquery
++ servlet
++ filter
++ listener
++ lucene
+
+### 开发环境部署过程
+1. 配置tomcat(自行搜索tomcat和eclipse的绑定过程)
+2. eclipse导入项目，配置jre、webserver库（如果环境一致，此处无需处理）
+3. 右键项目，run as-> run on server，选择配置的tomcat，即可开发环境运行
+
+### 服务器环境部署过程（服务器同样需要配置相同的环境）
+1. 在eclipse中，右键export->war，导出一个war包
+2. 上传到服务器
+3. 拷贝到#tomcat root directory#/webapps目录
+4. 启动tomcat服务器即可
+
+
 ### 错误调试
 + 在ie浏览器下不支持中文
 + 图片名不能有中文
 
 ### 待解决的问题
 + 分词不准确
-+ 定时爬取和更新
 + 切换到SSM
+
