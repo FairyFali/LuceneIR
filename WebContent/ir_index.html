@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EveryNews信息检索系统</title>
+    
+	<!-- Bootstrap style -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	    a{color: #333; font-weight: bold;}
+	    body{
+	        font-family:'';}
+	</style>
+</head>
+<body>
+<div style="width: 80%; margin: 0 auto;">
+<!--导航栏-->
+<nav class="navbar navbar-default" role="navigation" style="">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #000 !important;">EveryNews首页</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" style="color: #000 !important;">新闻</a></li>
+                <li><a href="#" style="color: #000 !important;">经济</a></li>
+                <li><a href="#" style="color: #000 !important;">体育</a></li>
+                <li><a href="#" style="color: #000 !important;">电视剧</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #000 !important;">
+                        更多 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">综艺</a></li>
+                        <li><a href="#">科教</a></li>
+                        <li><a href="#">旅游</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">科教</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">直播</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class='nav navbar-nav navbar-right'>
+                <li><a href="#">登录</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--输入框-->
+<div>
+    <img src="img/biaoyu.gif" class="center-block" alt="">
+    <form action="" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 col-xs-offset-2 control-label" style="padding: 0;">
+                <a href="###"><img src="img/ico.png" class="img-responsive" alt=""></a>
+            </label>
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入您的检索词" style="line-height: 30px; height: 44px;">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" style="height: 44px; width: 90px; background-color: #317EF3; color: white;">
+                            搜索
+                            <i class="glyphicon glyphicon-ok"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+ <!--热点新闻展示-->
+ <div style="">
+     <ul class="nav nav-tabs" style="color: #333;">
+         <li class="active"><a href="#allHotNews" data-toggle="tab">全部</a></li>
+         <li><a href="#html52" data-toggle="tab">网易</a></li>
+         <li><a href="#bootstrap2" data-toggle="tab">腾讯</a></li>
+         <li class="dropdown">
+             <a href="#" data-toggle="dropdown">更多 <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                 <li><a href="#jquery2" data-toggle="tab">搜狐</a></li>
+                 <li><a href="#yui2" data-toggle="tab">凤凰</a></li>
+             </ul>
+         </li>
+     </ul>
+
+     <div class="tab-content" style="padding: 10px;border: 1px #E9E9E9 solid; border-top: none;">
+         <div id="allHotNews" class="tab-pane active in fade">
+             <h4>all</h4>
+             <p></p>
+         </div>
+         <div  id="html52" class="tab-pane fade">
+             <div class="media" style="padding: 7px; border-bottom: 1px #E9E9E9 solid;">
+                 <div class="media-left media-middle">
+                     <img src="img/img1.png" alt="" class="media-object">
+                 </div>
+                 <div class="media-body" style="line-height: 50px;">
+                     <div class="media-heading" style="font-weight: bold; font-size: 20px; "><a href="#" style="color: black;">1599元起！苹果新iPod touch登场，但毫无购买欲</a></div>
+                     <p style="color: #999;"><span>雷科技</span> <span>05-28 21:55</span></p>
+                 </div>
+             </div>
+         </div>
+         <div id="bootstrap2" class="tab-pane fade">
+             <h4>Bootstrap</h4>
+             <p>Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。[2]  国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。[3] </p>
+         </div>
+         <div id="jquery2" class="tab-pane fade">
+             <h4>jQuery</h4>
+             <p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+         </div>
+         <div id="yui2" class="tab-pane fade">
+             <h4>Yui</h4>
+             <p>YUI 库，全称Yahoo! UI Library。是一组工具和控件，用JavaScript写成, 为的是用DOM 脚本，DHTML和AJAX等技术创建丰富的网页交互式应用程序。</p>
+         </div>
+         <div id="extjs2" class="tab-pane fade">
+             <h4>ExtJS</h4>
+             <p>extjs是一种软件。自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想法进行渲染，这些也算可以想到的功能。</p>
+         </div>
+     </div>
+ </div>
+
+<footer style="margin-top: 200px; margin-bottom: 30px;">
+    <div style="text-align: center;">
+        <p class="lh">Design by
+            <a class="sethome" href="fairyfali.github.io" target="_blank"> 王发利 </a> 刘锦 孔哲
+        </p>
+        <span class="copyright-text"><span>©2019&nbsp;EveryNews&nbsp;</span><a href="#" target="_blank">使用EveryNews前必读</a>&nbsp; </span>
+    </div>
+</footer>
+
+
+</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

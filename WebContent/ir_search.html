@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EveryNews-搜索</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div>
+    <!--搜索框-->
+    <div style="padding-bottom: 0; margin-bottom: 0;" class="left">
+        <form action="" method="post" class="form-horizontal" style="padding-left: 15px;">
+            <div class="form-group" style="margin-bottom: 0;">
+                <label class="col-sm-2 control-label" style="padding: 0;">
+                    <a href="###"><img src="img/ico.png" class="img-responsive" alt=""></a>
+                </label>
+                <div class="col-sm-6">
+                    <div class="input-group" style="margin-top:16px;">
+                        <input type="text" class="form-control" placeholder="请输入您的检索词" style="line-height: 30px; height: 44px;">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" style="height: 44px; width: 90px; background-color: #317EF3; color: white;">
+                                搜索
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--子栏目查询-->
+    <div class="" style="margin: 0; background-color: #eee; padding-top: 15px; padding-bottom: 0; margin-bottom: 2px;">
+        <div class="row" style="padding-bottom: 0; ">
+            <div class="col-sm-2 col-xs-0"></div>
+            <nav class="navbar navbar-text col-sm-6 visible-sm visible-lg visible-md" style="padding: 0; margin-top: 0; min-height: 0px !important;">
+                <div class="container" style="height: 20px;">
+                    <ul class="nav navbar-nav" style="height: 20px; margin-bottom: 0;">
+                        <li class="active"><a href="###" style="height: 20px;padding-top: 0px;margin-bottom: 0;">全网</a></li>
+                        <li><a href="###" style="height: 20px;padding-top: 0;">新浪</a></li>
+                        <li><a href="###" style="height: 20px;padding-top: 0;">网易</a></li>
+                        <li><a href="###" style="height: 20px;padding-top: 0;">腾讯</a></li>
+                        <li><a href="###" style="height: 20px;padding-top: 0;">搜狐</a></li>
+                        <li><a href="###" style="height: 20px;padding-top: 0;">凤凰</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--检索结果-->
+    <div class="">
+        <div class="row" style="padding-bottom: 0;" style="padding-left:20px;">
+            <div class="col-sm-2 col-xs-0"></div>
+            <div class="col-sm-6 col-xs-8" style="padding-left: 30px; line-height: 30px;">EveryNews为您找到相关结果约26,500,000个，用时1.5s。</div>
+            <div class="col-sm-4 col-xs-4"><button class="btn-link" data-toggle="collapse" data-target="#content" style="color: #333;">高级检索</button></div>
+        </div>
+    </div>
+    <!--高级检索-->
+    <!--选项-->
+    <div id="content" class="collapse">
+        <div class="row" style="padding-left:20px ;">
+            <div class="col-sm-2"></div>
+            <div class="btn-group col-sm-6" style="">
+                <button class="btn btn-default active">全文检索</button>
+                <button class="btn btn-default">标题检索</button>
+                <button class="btn btn-default">内容检索</button>
+                <div class="btn-group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        排序方式
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="###">相关度排序</a></li>
+                        <li><a href="###">时间排序</a></li>
+                        <li><a href="###">热点排序</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--新闻-->
+    <div class="" style="margin-top: 20px;">
+        <div class="row" style="padding-left:20px;">
+            <div class="col-sm-2"></div>
+            <div class="row col-sm-6" style="padding: 7px; border-bottom: 1px #E9E9E9 solid;">
+                <div class="col-sm-12"><a href="#" style="color: #317EF3;font-weight: bold; font-size: 20px;">吉林省白城市人大常委会原主任刘继武被查</a></div>
+                <div class="col-sm-12" style="">
+                    <p style="color: #333333;">
+                        <span>05-28 21:55</span>-<span>原标题：吉林省白城市人大常委会原主任刘继武接受纪律审查和监...</span>
+                        <p >
+                            <label for="" class="label label-success">网易</label>
+                            <label for="" class="label label-success">热度：10</label>
+                            <a href="#" style="height:16px;display: inline-block; width: 80%; overflow: scroll;">http://news.sina.com.cn/c/2018-11-20/doc-ihnyuqhi3886585.shtml</a>
+                        </p>
+                    </p>
+                </div>
+                <div style="padding-left: 12px;">
+                    <img src="img/2.jpg" class="img-responsive img-rounded" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--分页-->
+    <nav>
+        <div>
+            <div class="col-sm-2"></div>
+            <ul class="pagination col-sm-8" style="padding-left:15px;">
+                <li><a href="search?query=<%=query%>&&rank=<%=rank%>&&field=<%=field%>&&category=<%=category%>&&pageNow=1">首页</a></li>
+                <li><a href="search?query=<%=query%>&&rank=<%=rank%>&&field=<%=field%>&&category=<%=category%>&&pageNow=<%=pageNow - 1%>">上一页</a></li>
+                <li class="disabled"><a href="#">···</a></li>
+                <li><a href="search?query=<%=query%>&&rank=<%=rank%>&&field=<%=field%>&&category=<%=category%>&&pageNow=<%=i%>">1</a></li>
+                <li class="active"><a href="search?query=<%=query%>&&rank=<%=rank%>&&field=<%=field%>&&category=<%=category%>&&pageNow=<%=i%>">2</a></li>
+                <li class="disabled"><a href="#">···</a></li>
+                <li><a href="search?query=<%=query%>&&rank=<%=rank%>&&field=<%=field%>&&category=<%=category%>&&pageNow=<%=pageNow+1%>">下一页</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>
